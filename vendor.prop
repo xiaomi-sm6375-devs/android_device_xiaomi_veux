@@ -185,6 +185,7 @@ vendor.gralloc.secure_preview_only=1
 ro.incremental.enable=true
 
 # Media
+debug.stagefright.c2inputsurface=-1
 vendor.media.omx=0
 
 # Perf
