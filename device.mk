@@ -151,6 +151,11 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
      IFAAService
 
+# IPACM
+PRODUCT_PACKAGES += \
+    ipacm \
+    IPACM_cfg.xml
+
 # Soong
 PRODUCT_SOONG_NAMESPACES += \
     $(LOCAL_PATH) \
