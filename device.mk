@@ -163,6 +163,11 @@ PRODUCT_PACKAGES += \
     gps.conf \
     izat.conf
 
+# Health
+PRODUCT_PACKAGES += \
+    android.hardware.health-service.qti \
+    android.hardware.health-service.qti_recovery
+
 # Soong
 PRODUCT_SOONG_NAMESPACES += \
     $(LOCAL_PATH) \
