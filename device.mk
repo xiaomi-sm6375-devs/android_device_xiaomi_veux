@@ -32,6 +32,35 @@ PRODUCT_PACKAGES += \
     checkpoint_gc \
     otapreopt_script
 
+# Audio
+PRODUCT_PACKAGES += \
+    android.hardware.audio@6.0-impl \
+    android.hardware.audio.effect@6.0-impl \
+    android.hardware.audio.service \
+    android.hardware.bluetooth.audio-impl \
+    android.hardware.soundtrigger@2.3-impl
+
+PRODUCT_PACKAGES += \
+    audio.bluetooth.default \
+    audio.primary.holi \
+    audio.r_submix.default \
+    audio.usb.default \
+
+PRODUCT_PACKAGES += \
+    audioadsprpcd \
+    liba2dpoffload \
+    libbatterylistener \
+    libcomprcapture \
+    libexthwplugin \
+    libhdmiedid \
+    libhfp \
+    libqcompostprocbundle \
+    libqcomvisualizer \
+    libqcomvoiceprocessing \
+    libsndmonitor \
+    libspkrprot \
+    libvolumelistener
+
 # Soong
 PRODUCT_SOONG_NAMESPACES += \
     $(LOCAL_PATH)
