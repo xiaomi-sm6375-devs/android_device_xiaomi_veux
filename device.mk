@@ -59,7 +59,8 @@ PRODUCT_PACKAGES += \
     libqcomvoiceprocessing \
     libsndmonitor \
     libspkrprot \
-    libvolumelistener
+    libvolumelistener \
+    sound_trigger.primary.holi:32
 
 # Soong
 PRODUCT_SOONG_NAMESPACES += \
