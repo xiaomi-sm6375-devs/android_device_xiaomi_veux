@@ -315,5 +315,9 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     update_engine_sideload
 
+# USB
+PRODUCT_PACKAGES += \
+    android.hardware.usb-service.qti
+
 # Inherit from proprietary targets
 $(call inherit-product, vendor/xiaomi/veux/veux-vendor.mk)
