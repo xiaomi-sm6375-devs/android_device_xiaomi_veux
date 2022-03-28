@@ -1,5 +1,5 @@
-
 # Copyright (c) 2019-2020, The Linux Foundation. All rights reserved.
+# Copyright (c) 2022, Qualcomm Innovation Center, Inc. All rights reserved.
 #
 # Redistribution and use in source and binary forms, with or without
 # modification, are permitted provided that the following conditions are
@@ -216,10 +216,6 @@ on boot && property:persist.vendor.usb.controller.default=*
     setprop vendor.usb.controller ${persist.vendor.usb.controller.default}
 
 on charger
-    mount_all /vendor/etc/charger_fstab.qti --early
-    write /sys/kernel/boot_adsp/boot 1
-    #restart charger after ADSP is out of reset
-    #restart charger
     start vendor.power_off_alarm
     setprop sys.usb.controller 4e00000.dwc3
     setprop sys.usb.configfs 1
