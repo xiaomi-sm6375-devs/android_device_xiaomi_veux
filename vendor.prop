@@ -184,6 +184,9 @@ vendor.gralloc.secure_preview_only=1
 # Incremental FS
 ro.incremental.enable=true
 
+# Media
+vendor.media.omx=0
+
 # Perf
 ro.vendor.extension_library=libqti-perfd-client.so
 
