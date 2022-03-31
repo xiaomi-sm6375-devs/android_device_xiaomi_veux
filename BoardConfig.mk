@@ -9,6 +9,9 @@ DEVICE_PATH := device/xiaomi/veux
 # Inherit from sm6375-common
 include device/xiaomi/sm6375-common/BoardConfigCommon.mk
 
+# Build Broken
+BUILD_BROKEN_DUP_RULES := true
+
 # Display
 TARGET_SCREEN_DENSITY := 440
 
