@@ -17,5 +17,9 @@ PRODUCT_AAPT_PREF_CONFIG := xhdpi
 TARGET_SCREEN_HEIGHT := 2400
 TARGET_SCREEN_WIDTH := 1080
 
+# Overlays
+DEVICE_PACKAGE_OVERLAYS += \
+    $(LOCAL_PATH)/overlay
+
 # Inherit from vendor blobs
 $(call inherit-product, vendor/xiaomi/veux/veux-vendor.mk)
