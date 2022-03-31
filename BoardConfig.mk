@@ -15,5 +15,8 @@ BUILD_BROKEN_DUP_RULES := true
 # Display
 TARGET_SCREEN_DENSITY := 440
 
+# OTA assert
+TARGET_OTA_ASSERT_DEVICE := peux,veux
+
 # Inherit from the proprietary version
 include vendor/xiaomi/veux/BoardConfigVendor.mk
