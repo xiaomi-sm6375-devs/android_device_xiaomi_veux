@@ -15,6 +15,10 @@ BUILD_BROKEN_DUP_RULES := true
 # Display
 TARGET_SCREEN_DENSITY := 440
 
+# Init
+TARGET_INIT_VENDOR_LIB := //$(DEVICE_PATH):init_xiaomi_veux
+TARGET_RECOVERY_DEVICE_MODULES := init_xiaomi_veux
+
 # OTA assert
 TARGET_OTA_ASSERT_DEVICE := peux,veux
 
