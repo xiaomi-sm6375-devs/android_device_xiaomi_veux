@@ -272,10 +272,15 @@ vendor/lib64/libalCFR.so
 vendor/lib64/libalLDC.so
 vendor/lib64/libalhLDC.so
 vendor/lib64/libanc_dc_base.so
+vendor/lib64/libarcsoft_hdr_detection.so
+vendor/lib64/libarcsoft_high_dynamic_range.so
+vendor/lib64/libarcsoft_low_light_hdr.so
 vendor/lib64/libbitmlengine.so
+vendor/lib64/libbitmlenginev2.so
 vendor/lib64/libbitmlenginev2.so
 vendor/lib64/libc++_shared.so
 vendor/lib64/libcamera_nn_stub.so
+vendor/lib64/libcamera_scene.so
 vendor/lib64/libcamera_scene.so
 vendor/lib64/libcamerapostproc.so
 vendor/lib64/libcamxswispiqmodule.so
@@ -284,12 +289,22 @@ vendor/lib64/libcapiv2svarnn.so
 vendor/lib64/libcapiv2vop.so
 vendor/lib64/libchilog.so
 vendor/lib64/libcom.qti.chinodeutils.so
+vendor/lib64/libdng_sdk2vendor.so
+vendor/lib64/libft2vendor.so
 vendor/lib64/libipebpsstriping.so
 vendor/lib64/libipebpsstriping170.so
 vendor/lib64/libjpege.so
+vendor/lib64/libmctfengine_stub.so
+vendor/lib64/libmialgoengine.so
+vendor/lib64/libmibokeh_712.so
 vendor/lib64/libmm-color-convertor.so
+vendor/lib64/libmmcamera_cac3.so
+vendor/lib64/libmmcamera_mfnr_t4.so
+vendor/lib64/libmmcamera_pdpc.so
 vendor/lib64/libmpbase.so
 vendor/lib64/libofflinedump.so
+vendor/lib64/libofflinedump.so
+vendor/lib64/libofflinelog.so
 vendor/lib64/libofflinelog.so
 vendor/lib64/libopencv.so
 vendor/lib64/libopestriping.so
@@ -311,8 +326,10 @@ vendor/lib64/libthreadutils.so
 vendor/lib64/libvideofilter_only.so
 vendor/lib64/libvidhance.so
 vendor/lib64/libwa_depth.so
+vendor/lib64/libwa_dof.so
 vendor/lib64/libwa_refocus.so
 vendor/lib64/libwa_rtdof.so
+vendor/lib64/libwa_widelens_undistort.so
 vendor/lib64/vendor.qti.hardware.camera.postproc@1.0-service-impl.so
 
 # Camera arcsoft
