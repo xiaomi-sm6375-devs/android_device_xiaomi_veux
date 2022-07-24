@@ -72,6 +72,9 @@ function blob_fixup() {
         vendor/etc/init/init.batterysecret.rc)
             sed -i "s/on charger/on property:init.svc.vendor.charger=running/g" "${2}"
             ;;
+        vendor/lib64/camera/components/com.qti.node.mialgocontrol.so)
+            llvm-strip --strip-debug "${2}"
+            ;;
     esac
 }
 
