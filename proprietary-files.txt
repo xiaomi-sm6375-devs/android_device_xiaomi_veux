@@ -1,4 +1,4 @@
-# All unpinned blobs below are extracted from veux_global-user 11 RKQ1.211001.001 V13.0.10.0.RKCMIXM release-keys
+# All unpinned blobs below are extracted from veux_global-user 11 RKQ1.211001.001 V13.0.14.0.RKCMIXM release-keys
 
 # ACDB
 vendor/etc/acdbdata/MTP/holi-mtpsku1-snd-card/MTP_SKU1_Bluetooth_cal.acdb
