@@ -224,7 +224,13 @@ ro.soc.model=SM6375
 sys.usb.mtp.batchcancel=1
 vendor.usb.controller=4e00000.dwc3
 vendor.usb.diag.func.name=ffs
+vendor.usb.dpl.inst.name=dpl
+vendor.usb.qdss.inst.name=qdss_sw
+vendor.usb.rmnet.func.name=gsi
+vendor.usb.rmnet.inst.name=rmnet
+vendor.usb.rndis.func.name=gsi
 vendor.usb.use_ffs_mtp=1
+vendor.usb.use_gadget_hal=0
 
 # WiFi
 wifi.aware.interface=wifi-aware0
