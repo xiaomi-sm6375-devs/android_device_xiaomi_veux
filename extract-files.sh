@@ -59,6 +59,9 @@ function blob_fixup() {
             sed -i "/marketname/d" "${2}"
             sed -i "s/cert/model/" "${2}"
             ;;
+        system_ext/etc/init/wfdservice.rc)
+            sed -i "/^service/! s/wfdservice$/wfdservice64/g" "${2}"
+            ;;
     esac
 }
 
