@@ -1,0 +1,5 @@
+# All unpinned blobs below are extracted from veux_global-user 12 SKQ1.211006.001 V13.0.2.0.SKCMIXM release-keys
+
+# Touchscreen firmware
+vendor/firmware/goodix_cfg_group.bin:recovery/root/vendor/firmware/goodix_cfg_group.bin
+vendor/firmware/goodix_firmware.bin:recovery/root/vendor/firmware/goodix_firmware.bin
