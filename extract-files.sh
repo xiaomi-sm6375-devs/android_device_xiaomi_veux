@@ -74,7 +74,7 @@ function blob_fixup() {
             ;;
         vendor/lib64/camera/components/com.qti.node.mialgocontrol.so)
             llvm-strip --strip-debug "${2}"
-            "${PATCHELF}" --add-needed "libpiex_shim.so" "${2}"
+            grep -q "libpiex_shim.so" "${2}" || "${PATCHELF}" --add-needed "libpiex_shim.so" "${2}"
             ;;
     esac
 }
