@@ -13,6 +13,7 @@ function blob_fixup() {
     case "${1}" in
         vendor/lib64/camera/components/com.qti.node.mialgocontrol.so)
             llvm-strip --strip-debug  "${2}"
+            "${PATCHELF}" --add-needed "libpiex_shim.so" "${2}"
             ;;
         vendor/lib64/libvendor.goodix.hardware.biometrics.fingerprint@2.1.so)
             "${PATCHELF_0_8}" --remove-needed "libhidlbase.so" "${2}"
