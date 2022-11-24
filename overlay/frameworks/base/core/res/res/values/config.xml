@@ -428,6 +428,9 @@
         <item>9</item> <!-- COLOR_MODE_DISPLAY_P3 -->
     </integer-array>
 
+    <!-- Whether or not wcg mode should be enabled on this device -->
+    <bool name="config_enableWcgMode">true</bool>
+
     <!-- Vibrator pattern for feedback about a long screen/key press -->
     <integer-array name="config_longPressVibePattern">
         <item>0</item>
