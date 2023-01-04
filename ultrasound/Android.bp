@@ -1,0 +1,13 @@
+cc_library_shared {
+    name: "libnotifyaudiohal",
+    srcs: [
+        "libnotifyaudiohal.cpp",
+    ],
+    shared_libs: [
+        "android.hardware.audio@6.0",
+        "libhidlbase",
+        "liblog",
+        "libutils",
+    ],
+    vendor: true,
+}
