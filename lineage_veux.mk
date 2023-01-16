@@ -23,6 +23,6 @@ PRODUCT_MODEL := POCO X4 Pro 5G
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
-    PRIVATE_BUILD_DESC="veux_global-user 12 SKQ1.211006.001 V13.0.2.0.SKCMIXM release-keys"
+    PRIVATE_BUILD_DESC="veux_eea-user 12 SKQ1.211006.001 V13.0.3.0.SKCEUXM release-keys"
 
-BUILD_FINGERPRINT := Redmi/veux_global/veux:12/SKQ1.211006.001/V13.0.2.0.SKCMIXM:user/release-keys
+BUILD_FINGERPRINT := Redmi/veux_eea/veux:12/SKQ1.211006.001/V13.0.3.0.SKCEUXM:user/release-keys

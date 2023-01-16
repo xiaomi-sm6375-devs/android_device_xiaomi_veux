@@ -1,4 +1,4 @@
-# All unpinned blobs below are extracted from veux_global-user 12 SKQ1.211006.001 V13.0.2.0.SKCMIXM release-keys
+# All unpinned blobs below are extracted from veux_eea-user 12 SKQ1.211006.001 V13.0.3.0.SKCEUXM release-keys
 
 # ACDB
 vendor/etc/acdbdata/MTP/holi-mtpsku1-snd-card/MTP_SKU1_Bluetooth_cal.acdb
@@ -369,7 +369,7 @@ vendor/lib64/camera/components/com.qti.node.fcv.so
 vendor/lib64/camera/components/com.qti.node.formatconversion.so
 vendor/lib64/camera/components/com.qti.node.gpu.so
 vendor/lib64/camera/components/com.qti.node.memcpy.so
-vendor/lib64/camera/components/com.qti.node.mialgocontrol.so|537dd32ab0480def367caf2e92a38dd550426b3d
+vendor/lib64/camera/components/com.qti.node.mialgocontrol.so|844f02d94a34a18ec1998bb204494a6f6d0693af
 vendor/lib64/camera/components/com.qti.node.mimovie.so
 vendor/lib64/camera/components/com.qti.node.ml.so
 vendor/lib64/camera/components/com.qti.node.remosaic.so
