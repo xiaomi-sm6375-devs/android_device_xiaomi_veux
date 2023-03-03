@@ -58,6 +58,7 @@ on init
     wait /dev/block/platform/soc/${ro.boot.bootdevice}
     symlink /dev/block/platform/soc/${ro.boot.bootdevice} /dev/block/bootdevice
 
+    chown system system /sys/class/qcom-battery/input_suspend
     chown system system /sys/class/qcom-battery/charging_call_state
     chmod 0660 /sys/class/qcom-battery/charging_call_state
 
