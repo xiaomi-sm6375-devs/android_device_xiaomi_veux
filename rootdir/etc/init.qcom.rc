@@ -317,6 +317,9 @@ service loc_launcher /system/vendor/bin/loc_launcher
     user gps
     group gps
 
+on property:persist.sys.xtra-daemon.enabled=*
+    restart loc_launcher
+
 on post-fs-data
     write /data/vendor/radio/copy_complete 1
 
