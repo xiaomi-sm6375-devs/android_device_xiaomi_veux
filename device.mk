@@ -271,6 +271,10 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     android.hardware.radio-service.compat
 
+# Sensors
+PRODUCT_PACKAGES += \
+    android.hardware.sensors-service.xiaomi-multihal
+
 # Soong
 PRODUCT_SOONG_NAMESPACES += \
     $(LOCAL_PATH) \
