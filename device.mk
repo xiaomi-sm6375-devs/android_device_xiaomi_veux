@@ -233,6 +233,10 @@ PRODUCT_PACKAGES += \
 PRODUCT_ENFORCE_RRO_TARGETS := *
 
 PRODUCT_PACKAGES += \
+    CarrierConfigOverlayCOMMON \
+    TelephonyOverlayCOMMON
+
+PRODUCT_PACKAGES += \
     FrameworkOverlayVEUX \
     SettingsOverlayVEUX \
     SystemUIOverlayVEUX \
