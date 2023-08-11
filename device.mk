@@ -177,6 +177,11 @@ PRODUCT_PACKAGES += \
 
 # Overlays
 PRODUCT_PACKAGES += \
+    CarrierConfigOverlayCOMMON \
+    SettingsOverlayCOMMON \
+    TelephonyOverlayCOMMON
+
+PRODUCT_PACKAGES += \
     FrameworkOverlayVEUX \
     SettingsOverlayVEUX \
     SystemUIOverlayVEUX \
