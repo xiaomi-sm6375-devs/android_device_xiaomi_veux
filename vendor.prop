@@ -214,6 +214,7 @@ persist.vendor.sensors.support_direct_channel=false
 persist.vendor.sensors.sync_request=true
 
 # SoC
+ro.boot.product.vendor.sku=holi
 ro.soc.manufacturer=QTI
 ro.soc.model=SM6375
 
