@@ -98,6 +98,12 @@
         <fqname>@2.3::IUceService/com.qualcomm.qti.uceservice</fqname>
     </hal>
     <hal format="hidl">
+        <name>vendor.goodix.hardware.biometrics.fingerprint</name>
+        <transport>hwbinder</transport>
+        <fqname>@2.1::IGoodixFingerprintDaemon/default</fqname>
+        <fqname>@2.1::IGoodixFingerprintDaemonExt/default</fqname>
+    </hal>
+    <hal format="hidl">
         <name>vendor.nxp.nxpnfc</name>
         <transport>hwbinder</transport>
         <fqname>@2.0::INxpNfc/default</fqname>
@@ -282,6 +288,11 @@
         <name>vendor.qti.qspmhal</name>
         <transport>hwbinder</transport>
         <fqname>@1.0::IQspmhal/default</fqname>
+    </hal>
+    <hal format="hidl">
+        <name>vendor.silead.hardware.fingerprintext</name>
+        <transport>hwbinder</transport>
+        <fqname>@1.0::ISileadFingerprint/default</fqname>
     </hal>
     <kernel target-level="5"/>
 </manifest>
