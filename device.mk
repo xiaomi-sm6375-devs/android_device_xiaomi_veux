@@ -183,6 +183,7 @@ PRODUCT_PACKAGES += \
 
 PRODUCT_PACKAGES += \
     FrameworkOverlayVEUX \
+    LineageSDKOverlayVEUX \
     SettingsOverlayVEUX \
     SystemUIOverlayVEUX \
     WifiOverlayVEUX
