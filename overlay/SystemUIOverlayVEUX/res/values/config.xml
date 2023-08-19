@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     Copyright (C) 2023-2024 The LineageOS Project
+     SPDX-License-Identifier: Apache-2.0
+-->
+<resources>
+
+    <!--  Flag to turn on the rendering of the above path or not  -->
+    <bool name="config_enableDisplayCutoutProtection">true</bool>
+
+    <!-- A path similar to frameworks/base/core/res/res/values/config.xml
+      config_mainBuiltInDisplayCutout that describes a path larger than the exact path of a display
+      cutout. If present as well as config_enableDisplayCutoutProtection is set to true, then
+      SystemUI will draw this "protection path" instead of the display cutout path that is normally
+      used for anti-aliasing.
+
+      This path will only be drawn when the front-facing camera turns on, otherwise the main
+      DisplayCutout path will be rendered
+       -->
+    <string name="config_frontBuiltInDisplayCutoutProtection" translatable="false">
+        M 540,0
+        m -36,52
+        a 36,36 0 1,0 72,0
+        a 36,36 0 1,0 -72,0
+    </string>
+
+    <!-- Preferred max refresh rate at keyguard, if supported by the display. -->
+    <integer name="config_keyguardMaxRefreshRate">60</integer>
+
+    <!--  ID for the camera that needs extra protection -->
+    <string name="config_protectedCameraId" translatable="false">1</string>
+
+    <!-- Doze: does this device support STATE_DOZE?  -->
+    <bool name="doze_display_state_supported">true</bool>
+
+</resources>

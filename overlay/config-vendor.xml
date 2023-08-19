@@ -1,0 +1,10 @@
+<!--
+     Copyright (C) 2023-2024 The LineageOS Project
+     SPDX-License-Identifier: Apache-2.0
+-->
+<config>
+    <overlay package="android.overlay.veux" mutable="false" enabled="true" />
+    <overlay package="com.android.settings.overlay.veux" mutable="false" enabled="true" />
+    <overlay package="com.android.systemui.overlay.veux" mutable="false" enabled="true" />
+    <overlay package="com.android.wifi.resources.overlay.veux" mutable="false" enabled="true" />
+</config>
