@@ -225,6 +225,10 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     android.hardware.nfc-service.nxp
 
+PRODUCT_PACKAGES += \
+    com.android.nfc_extras \
+    Tag
+
 # Soong
 PRODUCT_SOONG_NAMESPACES += \
     $(LOCAL_PATH) \
