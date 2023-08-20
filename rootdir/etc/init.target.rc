@@ -176,3 +176,6 @@ service svi_on /vendor/bin/ppd "svi:on"
 
 on property:ro.vendor.display.svi=1 && property:sys.boot_completed=1
     start svi_on
+
+on property:ro.boot.hwversion=*
+    setprop ro.boot.hardware.revision ${ro.boot.hwversion}
