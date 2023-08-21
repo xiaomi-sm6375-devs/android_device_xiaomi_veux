@@ -72,6 +72,12 @@ function blob_fixup() {
         vendor/etc/init/init.batterysecret.rc)
             sed -i "s/on charger/on property:init.svc.vendor.charger=running/g" "${2}"
             ;;
+        vendor/etc/libnfc-pn557.conf)
+            grep -q "NXP RF" "${2}" || cat "${SRC}/vendor/libnfc-nxp_RF.conf" >> "${2}"
+            ;;
+        vendor/lib64/android.hardware.secure_element@1.0-impl.so)
+            ${PATCHELF} --remove-needed "android.hidl.base@1.0.so" "${2}"
+            ;;
         vendor/lib64/camera/components/com.qti.node.mialgocontrol.so)
             llvm-strip --strip-debug "${2}"
             grep -q "libpiex_shim.so" "${2}" || "${PATCHELF}" --add-needed "libpiex_shim.so" "${2}"

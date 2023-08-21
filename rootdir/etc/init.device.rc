@@ -1,0 +1,50 @@
+#
+# Copyright (C) 2023-2024 The LineageOS Project
+#
+# SPDX-License-Identifier: Apache-2.0
+#
+
+service vendor.nfc_hal_service /vendor/bin/hw/android.hardware.nfc-service.nxp
+    override
+    disabled
+    class early_hal
+    user nfc
+    group nfc
+
+service qti_esepowermanager_service_1_1 /vendor/bin/hw/vendor.qti.esepowermanager@1.1-service
+    override
+    disabled
+    class hal
+    user system
+    group nfc system
+
+service secureelement-hal_1_2 /vendor/bin/hw/vendor.qti.secure_element@1.2-service
+    override
+    disabled
+    class hal
+    user system
+    group system
+
+# Redmi Note 11 Pro 5G (Global)
+on early-init && property:ro.boot.board_id=S88006AA1
+    setprop ro.boot.product.hardware.sku pn557
+
+# Redmi Note 11E Pro
+on early-init && property:ro.boot.board_id=S88007AA1
+    setprop ro.boot.product.hardware.sku sn100
+
+# Redmi Note 11 Pro 5G (Japan)
+on early-init && property:ro.boot.board_id=S88008BA1
+    setprop ro.boot.product.hardware.sku sn100
+
+# POCO X4 Pro 5G (Global)
+on early-init && property:ro.boot.board_id=S88106BA1
+    setprop ro.boot.product.hardware.sku pn557
+
+on property:ro.boot.product.hardware.sku=pn557
+    enable vendor.nfc_hal_service
+
+on property:ro.boot.product.hardware.sku=sn100
+    enable vendor.nfc_hal_service
+    enable qti_esepowermanager_service_1_1
+    enable secureelement-hal_1_2
