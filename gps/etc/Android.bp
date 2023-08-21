@@ -19,3 +19,10 @@ prebuilt_etc {
     vendor: true,
     src: "gnss_antenna_info.conf",
 }
+
+prebuilt_etc {
+
+    name: "izat.conf",
+    vendor: true,
+    src: "izat.conf",
+}
