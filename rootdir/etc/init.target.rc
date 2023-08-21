@@ -176,3 +176,7 @@ service svi_on /vendor/bin/ppd "svi:on"
 
 on property:ro.vendor.display.svi=1 && property:sys.boot_completed=1
     start svi_on
+
+on property:sys.boot_completed=1
+    # Enable PowerHAL hint processing
+    setprop vendor.powerhal.init 1
