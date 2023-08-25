@@ -287,7 +287,16 @@ PRODUCT_PACKAGES += \
     SystemUIOverlayVEUX \
     WifiOverlayVEUX
 
+PRODUCT_PACKAGES += \
+    SettingsProviderOverlay2201116SG \
+    SettingsProviderOverlay2201116SC \
+    SettingsProviderOverlay2201116SI \
+    SettingsProviderOverlay2201116SR \
+    SettingsProviderOverlay2201116PG \
+    SettingsProviderOverlay2201116PI
+
 PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/overlay/config-odm.xml:$(TARGET_COPY_OUT_ODM)/overlay/config/config.xml \
     $(LOCAL_PATH)/overlay/config-vendor.xml:$(TARGET_COPY_OUT_VENDOR)/overlay/config/config.xml
 
 # Partitions

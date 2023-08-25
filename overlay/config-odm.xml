@@ -1,0 +1,12 @@
+<!--
+     Copyright (C) 2023-2024 The LineageOS Project
+     SPDX-License-Identifier: Apache-2.0
+-->
+<config>
+    <overlay package="com.android.providers.settings.overlay.s88006aa1" mutable="false" enabled="true" />
+    <overlay package="com.android.providers.settings.overlay.s88007aa1" mutable="false" enabled="true" />
+    <overlay package="com.android.providers.settings.overlay.s88007ea1" mutable="false" enabled="true" />
+    <overlay package="com.android.providers.settings.overlay.s88008ba1" mutable="false" enabled="true" />
+    <overlay package="com.android.providers.settings.overlay.s88106ba1" mutable="false" enabled="true" />
+    <overlay package="com.android.providers.settings.overlay.s88107ba1" mutable="false" enabled="true" />
+</config>
