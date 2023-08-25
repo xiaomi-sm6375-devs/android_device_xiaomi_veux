@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     Copyright (C) 2023-2024 The LineageOS Project
+     SPDX-License-Identifier: Apache-2.0
+-->
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.android.providers.settings.overlay.s88007ea1">
+    <overlay
+        android:requiredSystemPropertyName="ro.boot.board_id"
+        android:requiredSystemPropertyValue="S88007EA1"
+        android:targetPackage="com.android.providers.settings" />
+</manifest>
