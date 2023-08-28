@@ -12,6 +12,23 @@
             <nits>450.0</nits>
         </point>
     </screenBrightnessMap>
-    <ambientLightHorizonLong>3000</ambientLightHorizonLong>
-    <ambientLightHorizonShort>1000</ambientLightHorizonShort>
+
+    <screenBrightnessRampIncreaseMaxMillis>2000</screenBrightnessRampIncreaseMaxMillis>
+
+    <ambientBrightnessChangeThresholds>
+        <brighteningThresholds>
+            <minimum>10</minimum>
+        </brighteningThresholds>
+        <darkeningThresholds>
+            <minimum>0</minimum>
+        </darkeningThresholds>
+    </ambientBrightnessChangeThresholds>
+
+    <ambientLightHorizonLong>5000</ambientLightHorizonLong>
+    <ambientLightHorizonShort>50</ambientLightHorizonShort>
+
+    <screenBrightnessRampFastDecrease>0.7047244</screenBrightnessRampFastDecrease>
+    <screenBrightnessRampFastIncrease>0.7047244</screenBrightnessRampFastIncrease>
+    <screenBrightnessRampSlowDecrease>0.05</screenBrightnessRampSlowDecrease>
+    <screenBrightnessRampSlowIncrease>0.05</screenBrightnessRampSlowIncrease>
 </displayConfiguration>
