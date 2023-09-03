@@ -190,6 +190,8 @@ ro.incremental.enable=true
 # Media
 debug.stagefright.ccodec=4
 debug.stagefright.omx_default_rank=0
+vendor.media.target_variant=_blair
+vendor.netflix.bsp_rev=Q4350-32962-1
 
 # Perf
 ro.vendor.extension_library=libqti-perfd-client.so
