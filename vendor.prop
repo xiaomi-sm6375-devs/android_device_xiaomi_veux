@@ -187,6 +187,8 @@ ro.incremental.enable=true
 # Media
 debug.stagefright.c2inputsurface=-1
 vendor.media.omx=0
+vendor.media.target_variant=_blair
+vendor.netflix.bsp_rev=Q4350-32962-1
 
 # Perf
 ro.vendor.extension_library=libqti-perfd-client.so
