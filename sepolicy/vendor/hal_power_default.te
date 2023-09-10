@@ -1,0 +1,5 @@
+type vendor_sysfs_double_tap, sysfs_type, fs_type;
+type vendor_touchfeature_device, dev_type;
+
+allow hal_power_default vendor_sysfs_double_tap:file rw_file_perms;
+allow hal_power_default vendor_touchfeature_device:chr_file rw_file_perms;

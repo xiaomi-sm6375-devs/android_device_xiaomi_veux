@@ -1,0 +1,1 @@
+allow tee vendor_bsg_device:chr_file { setattr };

@@ -1,0 +1,4 @@
+add_hwservice(vendor_hal_cameraperf_server, vendor_hal_cameraperf_hwservice)
+allow vendor_hal_cameraperf_client vendor_hal_cameraperf_hwservice:hwservice_manager find;
+binder_call(vendor_hal_cameraperf_client, vendor_hal_cameraperf_server)
+binder_call(vendor_hal_cameraperf_server, vendor_hal_cameraperf_client)
