@@ -1,0 +1,23 @@
+type vendor_hal_citsensorservice_xiaomi_hwservice, hwservice_manager_type, protected_hwservice;
+
+type vendor_hal_citsensorservice_xiaomi_default, domain;
+hal_server_domain(vendor_hal_citsensorservice_xiaomi_default, vendor_hal_citsensorservice_xiaomi)
+
+type vendor_hal_citsensorservice_xiaomi_default_exec, exec_type, vendor_file_type, file_type;
+init_daemon_domain(vendor_hal_citsensorservice_xiaomi_default)
+
+hal_attribute_hwservice(vendor_hal_citsensorservice_xiaomi, vendor_hal_citsensorservice_xiaomi_hwservice)
+
+binder_call(vendor_hal_citsensorservice_xiaomi_client, vendor_hal_citsensorservice_xiaomi_server)
+binder_call(vendor_hal_citsensorservice_xiaomi_server, vendor_hal_citsensorservice_xiaomi_client)
+
+allow vendor_hal_citsensorservice_xiaomi self:{ socket qipcrtr_socket } create_socket_perms;
+allowxperm vendor_hal_citsensorservice_xiaomi self:{ socket qipcrtr_socket } ioctl msm_sock_ipc_ioctls;
+
+allow vendor_hal_citsensorservice_xiaomi_default fwk_sensor_hwservice:hwservice_manager find;
+allow vendor_hal_citsensorservice_xiaomi_default system_server:binder call;
+
+r_dir_file(vendor_hal_citsensorservice_xiaomi_default, vendor_sysfs_graphics)
+
+allow vendor_hal_citsensorservice_xiaomi_default input_device:dir r_dir_perms;
+allow vendor_hal_citsensorservice_xiaomi_default input_device:chr_file rw_file_perms;
