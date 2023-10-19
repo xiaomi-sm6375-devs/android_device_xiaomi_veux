@@ -171,6 +171,10 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     vendor.qti.hardware.memtrack-service
 
+# NFC
+PRODUCT_PACKAGES += \
+    android.hardware.nfc-service.nxp
+
 # Soong
 PRODUCT_SOONG_NAMESPACES += \
     $(LOCAL_PATH) \
