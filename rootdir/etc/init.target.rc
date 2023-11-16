@@ -133,7 +133,7 @@ on boot
 on boot && property:persist.vendor.usb.controller.default=*
     setprop vendor.usb.controller ${persist.vendor.usb.controller.default}
 
-on charger
+on property:init.svc.vendor.charger=running
     start vendor.power_off_alarm
     start mi_thermald
 
