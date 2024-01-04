@@ -475,3 +475,4 @@ PRODUCT_BOOT_JARS += \
 
 # Inherit from proprietary targets
 $(call inherit-product, vendor/xiaomi/veux/veux-vendor.mk)
+$(call inherit-product, vendor/xiaomi/miuicamera-veux/MiuiCamera-veux.mk)
