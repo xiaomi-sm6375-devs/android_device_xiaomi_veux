@@ -1,5 +1,6 @@
 # All unpinned blobs below are extracted from OS1.0.13.0.TKCEUXM (VEUXEEAGlobal)
 # dada: OS2.0.217.0.WOCMIXM (dada_global)
+# sunstone: OS2.0.5.0.UMQMIXM (sunstone_global)
 
 # ACDB
 vendor/etc/acdbdata/QRD/global/aw882xx/QRD_global_aw882xx_Bluetooth_cal.acdb
@@ -545,24 +546,24 @@ vendor/lib/libdiag.so
 vendor/lib64/libdiag.so
 vendor/lib64/vendor.qti.diaghal@1.0.so;MODULE_SUFFIX=_vendor
 
-# Display (SDM)
-vendor/etc/display/DPU660.xml
-vendor/etc/display/DPU670.xml
-vendor/etc/display/DPU720.xml
-vendor/etc/display/DPU7__.xml
-vendor/lib64/libdisplayqos.so
-vendor/lib64/libdisplayskuutils.so
-vendor/lib64/libdpps.so
-vendor/lib64/libhdr_tm.so
-vendor/lib64/libqrtrclient.so
-vendor/lib64/libqseed3.so
-vendor/lib64/librcmask.so
-vendor/lib64/libsdm-color.so
-vendor/lib64/libsdm-colormgr-algo.so
-vendor/lib64/libsdm-diag.so
-vendor/lib64/libsdm-disp-vndapis.so
-vendor/lib64/libsdmextension.so
-vendor/lib64/libtinyxml2_1.so
+# Display (SDM) - from sunstone
+vendor/etc/display/DPU660.xml|b26dd73e361546d89bf3d7082a471703dc6ac2cb
+vendor/etc/display/DPU670.xml|e5131a60ceff29ca5eb561eec7eddadef1d0486f
+vendor/etc/display/DPU720.xml|4e54e8712d65773eb87867bf64a4cb98ea9bb8c3
+vendor/etc/display/DPU7__.xml|c056f3cb9fa123ca3de5b2a9775c184dddf25b9d
+vendor/lib64/libdisplayqos.so|aa222f4c1a2d2fb60944c44f8a82621d6bc75184
+vendor/lib64/libdisplayskuutils.so|d467f3bcaeafa6ed9de62afe2c00a3be46f4bb0f
+vendor/lib64/libdpps.so|b7d8458a66fd8510a7a490c1eebd3bac3fb159ec
+vendor/lib64/libhdr_tm.so|7954c5cd5c0b23fe8d0609361c22d24c59f1448b
+vendor/lib64/libqrtrclient.so|51c55fea28fa475ae9b2c64592f32802e6ba6c25
+vendor/lib64/libqseed3.so|d62c37baf259250cadfcff8734e82054ed87bb96
+vendor/lib64/librcmask.so|8feb479fe590b6aec282ce3342574d9113f80516
+vendor/lib64/libsdm-color.so|1c416b205c996575d26a41c5d7a9d07728f9134a
+vendor/lib64/libsdm-colormgr-algo.so|5416a3b9b0735099c9b86f451f41386711787ea4
+vendor/lib64/libsdm-diag.so|393c9ad3e3ad3210515900627f65bf6e3633226e
+vendor/lib64/libsdm-disp-vndapis.so|dc3ff8c971bbcb0d1b9e5079324d1d1d05a1fd39
+vendor/lib64/libsdmextension.so|161a19a7e915174ff31a2ed05acbf0fc98368bb8
+vendor/lib64/libtinyxml2_1.so|11ceb3f1e7650c41621d47e5ec5567c8f466086e
 
 # Display postprocessing
 vendor/bin/hw/vendor.display.color@1.0-service
