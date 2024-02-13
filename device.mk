@@ -307,5 +307,9 @@ PRODUCT_BOOT_JARS += \
     telephony-ext \
     xiaomi-telephony-stub
 
+# Thermal
+PRODUCT_PACKAGES += \
+    android.hardware.thermal-service.qti
+
 # Inherit from proprietary targets
 $(call inherit-product, vendor/xiaomi/veux/veux-vendor.mk)
