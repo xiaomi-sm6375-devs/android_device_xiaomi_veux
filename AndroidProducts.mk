@@ -5,9 +5,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/lineage_veux.mk
+    $(LOCAL_DIR)/aosp_veux.mk
 
 COMMON_LUNCH_CHOICES := \
-    lineage_veux-user \
-    lineage_veux-userdebug \
-    lineage_veux-eng
+    aosp_veux-user \
+    aosp_veux-userdebug \
+    aosp_veux-eng

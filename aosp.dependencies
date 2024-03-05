@@ -1,0 +1,30 @@
+[
+  {
+    "repository": "hardware_xiaomi",
+    "target_path": "hardware/xiaomi",
+    "branch": "fourteen",
+    "remote": "pixel"
+  },
+  {
+    "repository": "kernel_xiaomi_sm6375",
+    "target_path": "kernel/xiaomi/sm6375",
+    "branch": "fourteen"
+  },
+  {
+    "repository": "device_xiaomi_veux-kernel",
+    "target_path": "device/xiaomi/veux-kernel",
+    "branch": "thirteen"
+  },
+  {
+    "repository": "vendor_xiaomi_veux",
+    "target_path": "vendor/xiaomi/veux",
+    "branch": "fourteen",
+    "remote": "pixel-devices-blobs"
+  },
+  {
+    "repository": "vendor_xiaomi_miuicamera-veux",
+    "target_path": "vendor/xiaomi/miuicamera-veux",
+    "branch": "fourteen",
+    "remote": "pixel-devices-blobs"
+  }
+]
