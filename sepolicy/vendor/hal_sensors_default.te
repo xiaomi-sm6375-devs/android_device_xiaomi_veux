@@ -1,13 +1,6 @@
-type vendor_sysfs_iio, fs_type, sysfs_type;
-
 allow hal_sensors_default audio_socket:sock_file rw_file_perms;
 allow hal_sensors_default sound_device:chr_file rw_file_perms;
 allow hal_sensors_default hal_audio_default:unix_stream_socket connectto;
-
-allow hal_sensors_default iio_device:chr_file r_file_perms;
-allow hal_sensors_default vendor_sysfs_iio:dir r_dir_perms;
-allow hal_sensors_default vendor_sysfs_iio:file rw_file_perms;
-allow hal_sensors_default vendor_sysfs_udfps:file rw_file_perms;
 
 hal_client_domain(hal_sensors_default, hal_audio)
 allow hal_sensors_default hal_audio_hwservice:hwservice_manager find;
