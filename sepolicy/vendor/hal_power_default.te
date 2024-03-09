@@ -1,5 +1,15 @@
-type vendor_sysfs_double_tap, sysfs_type, fs_type;
-type vendor_touchfeature_device, dev_type;
+type proc_touchpanel, fs_type, proc_type;
+allow hal_power_default proc_touchpanel:dir search;
+allow hal_power_default proc_touchpanel:file rw_file_perms;
 
-allow hal_power_default vendor_sysfs_double_tap:file rw_file_perms;
-allow hal_power_default vendor_touchfeature_device:chr_file rw_file_perms;
+allow hal_power_default vendor_sysfs_devfreq:dir search;
+allow hal_power_default {
+  vendor_sysfs_devfreq
+  sysfs_devices_system_cpu
+  vendor_sysfs_graphics
+  vendor_sysfs_kgsl
+  vendor_sysfs_scsi_host
+}:file rw_file_perms;
+
+vendor_internal_prop(vendor_power_prop)
+set_prop(hal_power_default, vendor_power_prop)

@@ -1,15 +1,8 @@
 type camera_persist_file, vendor_persist_type, file_type;
-type vendor_hal_cameraperf_hwservice, hwservice_manager_type, protected_hwservice;
-type vendor_hal_camerapostproc_xiaomi_hwservice, hwservice_manager_type;
 vendor_internal_prop(vendor_camera_sensor_prop)
 
 set_prop(hal_camera_default, vendor_camera_sensor_prop)
 r_dir_file(hal_camera_default, camera_persist_file)
 allow hal_camera_default mnt_vendor_file:dir search;
 
-hal_server_domain(hal_camera_default, vendor_hal_cameraperf)
-hal_server_domain(hal_camera_default, vendor_hal_camerapostproc_xiaomi)
-add_hwservice(hal_camera_server, vendor_hal_cameraperf_hwservice)
-add_hwservice(hal_camera_server, vendor_hal_camerapostproc_xiaomi_hwservice)
-allow hal_camera_client vendor_hal_cameraperf_hwservice:hwservice_manager find;
-allow hal_camera_client vendor_hal_camerapostproc_xiaomi_hwservice:hwservice_manager find;
+binder_call(hal_camera_default, system_server)

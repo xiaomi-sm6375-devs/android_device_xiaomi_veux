@@ -1,6 +1,5 @@
 type vendor_fingerprint_device, dev_type;
 type vendor_hal_fingerprint_hwservice_xiaomi, hwservice_manager_type;
-type vendor_sysfs_udfps, sysfs_type, fs_type;
 vendor_restricted_prop(vendor_fp_prop)
 vendor_internal_prop(vendor_fp_info_prop)
 
@@ -23,9 +22,6 @@ allow hal_fingerprint_default vendor_sysfs_spss:dir r_dir_perms;
 allow hal_fingerprint_default vendor_sysfs_spss:file rw_file_perms;
 allow hal_fingerprint_default vendor_sysfs_fingerprint:dir r_dir_perms;
 allow hal_fingerprint_default vendor_sysfs_fingerprint:file rw_file_perms;
-allow hal_fingerprint_default vendor_sysfs_udfps:file rw_file_perms;
-allow hal_fingerprint_default vendor_sysfs_graphics:dir r_dir_perms;
-allow hal_fingerprint_default vendor_sysfs_graphics:file rw_file_perms;
 
 # Dev nodes
 allow hal_fingerprint_default tee_device:chr_file rw_file_perms;

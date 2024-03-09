@@ -1,70 +1,65 @@
 # Audio
-/dev/socket/audio_hw_socket                                             u:object_r:audio_socket:s0
-/dev/elliptic(.*)?                    u:object_r:sound_device:s0
-/dev/mius(.*)?                        u:object_r:sound_device:s0
+/dev/socket/audio_hw_socket                                                    u:object_r:audio_socket:s0
+/dev/elliptic(.*)?                                                             u:object_r:sound_device:s0
 
 # Battery
-/vendor/bin/batterysecret		u:object_r:batterysecret_exec:s0
+/vendor/bin/batterysecret                                                      u:object_r:batterysecret_exec:s0
 
 # Camera
-/mnt/vendor/persist/camera(/.*)?   u:object_r:camera_persist_file:s0
-/vendor/lib(64)?/libc\+\+_shared\.so u:object_r:same_process_hal_file:s0
-/vendor/lib(64)?/libmialgo_ai_vision\.so u:object_r:same_process_hal_file:s0
-/vendor/lib(64)?/libmialgo_utils\.so u:object_r:same_process_hal_file:s0
-/vendor/lib(64)?/libSNPE\.so u:object_r:same_process_hal_file:s0
-/vendor/lib(64)?/libsnpe_dsp_domains_v2\.so u:object_r:same_process_hal_file:s0
-/vendor/lib(64)?/libsnpe_dsp_domains_v3\.so u:object_r:same_process_hal_file:s0
-/vendor/lib(64)?/libsnpe_htp\.so u:object_r:same_process_hal_file:s0
-/vendor/lib(64)?/rfsa/adsp/libsnpe_dsp_v65_domains_v2_skel\.so u:object_r:same_process_hal_file:s0
-/vendor/lib(64)?/rfsa/adsp/libsnpe_dsp_v66_domains_v2_skel\.so u:object_r:same_process_hal_file:s0
-/vendor/lib(64)?/rfsa/adsp/libsnpe_dsp_v68_domains_v3_skel\.so u:object_r:same_process_hal_file:s0
-/vendor/lib(64)?/rfsa/adsp/libsnpe_htp_v65_skel\.so u:object_r:same_process_hal_file:s0
-/vendor/lib(64)?/rfsa/adsp/libsnpe_htp_v66_skel\.so u:object_r:same_process_hal_file:s0
-/vendor/lib(64)?/rfsa/adsp/libsnpe_htp_v68_skel\.so u:object_r:same_process_hal_file:s0
-
-# IR
-/dev/ir_spi                                      u:object_r:ir_spi_device:s0
-
-# Mlipay
-/(vendor|system/vendor)/bin/mlipayd@1.1          u:object_r:hal_mlipay_default_exec:s0
-
-# NFC
-/vendor/bin/hw/android\.hardware\.nfc-service\.nxp                 u:object_r:hal_nfc_default_exec:s0
-
-# Power
-/sys/devices/virtual/touch/tp_dev/double_tap                       u:object_r:vendor_sysfs_double_tap:s0
-
-# Power
-/dev/xiaomi-touch                                                  u:object_r:vendor_touchfeature_device:s0
-
-# Powershare
-/vendor/bin/hw/vendor\.lineage\.powershare@1\.0-service\.xiaomi                           u:object_r:hal_lineage_powershare_default_exec:s0
-
-# Sensors
-/sys/bus/iio/devices                                                                                                            u:object_r:vendor_sysfs_iio:s0
-/sys/devices/platform/us_prox.0/iio:device1(/.*)?                                                                               u:object_r:vendor_sysfs_iio:s0
-/sys/devices/platform/soc/c440000.qcom,spmi/spmi-0/spmi0-00/c440000.qcom,spmi:qcom,pmk8350@0:vadc@3100/iio:device0(/.*)?        u:object_r:vendor_sysfs_iio:s0
-/sys/devices/platform/soc/soc:qcom,dsi-display-primary/mi_display/disp-DSI-0/dynamic_fps                                        u:object_r:vendor_sysfs_graphics:s0
-/vendor/bin/hw/android\.hardware\.sensors@2.1-service\.xiaomi-multihal                                  u:object_r:hal_sensors_default_exec:s0
-/vendor/bin/hw/vendor\.xiaomi\.hardware\.citsensorservice@1\.1-service                                  u:object_r:vendor_hal_citsensorservice_xiaomi_default_exec:s0
+/mnt/vendor/persist/camera(/.*)?                                               u:object_r:camera_persist_file:s0
+/vendor/lib64/libalCFR\.so                                                     u:object_r:same_process_hal_file:s0
+/vendor/lib64/libalhLDC\.so                                                    u:object_r:same_process_hal_file:s0
+/vendor/lib64/libanc_dc_base\.so                                               u:object_r:same_process_hal_file:s0
+/vendor/lib64/libarcsoft_beautyshot\.so                                        u:object_r:same_process_hal_file:s0
+/vendor/lib64/libarcsoft_dualcam_refocus_image\.so                             u:object_r:same_process_hal_file:s0
+/vendor/lib64/libarcsoft_high_dynamic_range\.so                                u:object_r:same_process_hal_file:s0
+/vendor/lib64/libarcsoft_low_light_hdr\.so                                     u:object_r:same_process_hal_file:s0
+/vendor/lib64/libarcsoft_portrait_lighting_c\.so                               u:object_r:same_process_hal_file:s0
+/vendor/lib64/libarcsoft_portrait_lighting\.so                                 u:object_r:same_process_hal_file:s0
+/vendor/lib64/libc\+\+_shared\.so                                              u:object_r:same_process_hal_file:s0
+/vendor/lib64/libHalSuperSensorServer\.so                                      u:object_r:same_process_hal_file:s0
+/vendor/lib64/libmialgoengine\.so                                              u:object_r:same_process_hal_file:s0
+/vendor/lib64/libmibokeh_712\.so                                               u:object_r:same_process_hal_file:s0
+/vendor/lib64/libmorpho_Lowlight\.so                                           u:object_r:same_process_hal_file:s0
+/vendor/lib64/libmpbase\.so                                                    u:object_r:same_process_hal_file:s0
+/vendor/lib64/libSuperSensorCPU\.so                                            u:object_r:same_process_hal_file:s0
+/vendor/lib64/libSuperSensor\.so                                               u:object_r:same_process_hal_file:s0
+/vendor/lib64/libwa_depth\.so                                                  u:object_r:same_process_hal_file:s0
+/vendor/lib64/libwa_dof\.so                                                    u:object_r:same_process_hal_file:s0
+/vendor/lib64/libwa_refocus\.so                                                u:object_r:same_process_hal_file:s0
+/vendor/lib64/libwa_widelens_undistort\.so                                     u:object_r:same_process_hal_file:s0
+/vendor/lib64/libxml2_vendor\.so                                               u:object_r:same_process_hal_file:s0
 
 # Fingerprint
-/dev/goodix_fp                                                      u:object_r:vendor_fingerprint_device:s0
-/mnt/vendor/persist/goodix(/.*)?                                    u:object_r:fingerprint_vendor_data_file:s0
-/data/vendor/fpc(/.*)?                                              u:object_r:fingerprint_vendor_data_file:s0
-/data/vendor/fpdump(/.*)?                                           u:object_r:fingerprint_vendor_data_file:s0
-/data/vendor/goodix(/.*)?                                           u:object_r:fingerprint_vendor_data_file:s0
+/dev/goodix_fp                                                                 u:object_r:vendor_fingerprint_device:s0
+/dev/silead_fp                                                                 u:object_r:vendor_fingerprint_device:s0
+/dev/silead_stub                                                               u:object_r:vendor_fingerprint_device:s0
+/dev/spidev0.0                                                                 u:object_r:vendor_fingerprint_device:s0
+/data/vendor/goodix(/.*)?                                                      u:object_r:fingerprint_vendor_data_file:s0
+/data/vendor/silead(/.*)?                                                      u:object_r:fingerprint_vendor_data_file:s0
+/data/vendor_de/[0-9]+/goodix(/.*)?                                            u:object_r:fingerprint_vendor_data_file:s0
 /vendor/bin/hw/android\.hardware\.biometrics\.fingerprint@2\.3-service\.xiaomi u:object_r:hal_fingerprint_default_exec:s0
-/sys/devices/platform/soc/soc:qcom,dsi-display-primary/fod_hbm      u:object_r:vendor_sysfs_udfps:s0
-/sys/devices/platform/soc/soc:qcom,dsi-display-primary/fod_ui       u:object_r:vendor_sysfs_udfps:s0
-/sys/devices/virtual/touch/tp_dev/fod_status                        u:object_r:vendor_sysfs_udfps:s0
-/sys/devices/virtual/touch/touch_dev/fod_press_status               u:object_r:vendor_sysfs_udfps:s0
+/vendor/bin/hw/vendor\.silead\.hardware\.fingerprintext@1\.0-service           u:object_r:hal_fingerprint_default_exec:s0
+
+# IR
+/dev/ir_spi                                                                    u:object_r:ir_spi_device:s0
+
+# Mlipay
+/(vendor|system/vendor)/bin/mlipayd@1.1                                        u:object_r:hal_mlipay_default_exec:s0
+
+# NFC
+/dev/pn553                                                                     u:object_r:nfc_device:s0
+/vendor/bin/hw/android\.hardware\.nfc-service\.nxp                             u:object_r:hal_nfc_default_exec:s0
+
+# Power
+/vendor/bin/hw/android\.hardware\.power-service\.xiaomi-libperfmgr             u:object_r:hal_power_default_exec:s0
+
+# Sensors
+/vendor/bin/hw/android\.hardware\.sensors@2.1-service\.xiaomi-multihal         u:object_r:hal_sensors_default_exec:s0
 
 # Thermal
-/data/vendor/thermal(/.*)?                           u:object_r:thermal_data_file:s0
-/vendor/bin/mi_thermald                              u:object_r:mi_thermald_exec:s0
+/data/vendor/thermal(/.*)?                                                     u:object_r:thermal_data_file:s0
+/vendor/bin/mi_thermald                                                        u:object_r:mi_thermald_exec:s0
 
 # Xiaomi MAC
-/vendor/bin/nv_mac                             u:object_r:vendor_wcnss_service_exec:s0
-/data/vendor/mac_addr(/.*)?                    u:object_r:vendor_wifi_vendor_data_file:s0
-/data/vendor/wlan_logs(/.*)?                   u:object_r:vendor_wifi_vendor_data_file:s0
+/data/vendor/mac_addr(/.*)?                                                    u:object_r:vendor_wifi_vendor_data_file:s0
