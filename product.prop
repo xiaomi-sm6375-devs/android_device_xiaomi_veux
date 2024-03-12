@@ -4,3 +4,6 @@ audio.deep_buffer.media=true
 audio.offload.min.duration.secs=30
 audio.offload.video=true
 ro.af.client_heap_size_kbyte=7168
+
+# eSIM
+masterclear.allow_retain_esim_profiles_after_fdr=true

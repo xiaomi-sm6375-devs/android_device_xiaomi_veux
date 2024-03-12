@@ -7,4 +7,6 @@
     <overlay package="com.android.settings.overlay.veux" mutable="false" enabled="true" />
     <overlay package="com.android.systemui.overlay.veux" mutable="false" enabled="true" />
     <overlay package="com.android.wifi.resources.overlay.veux" mutable="false" enabled="true" />
+    <overlay package="com.android.settings.overlay.s88008ba1" mutable="false" enabled="true" />
+    <overlay package="com.android.euicc.s88008ba1" mutable="false" enabled="true" />
 </config>
