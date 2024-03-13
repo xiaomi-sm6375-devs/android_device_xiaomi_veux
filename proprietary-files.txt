@@ -668,9 +668,9 @@ vendor/lib64/vendor.qti.esepowermanager@1.1.so|759973ec41a5a9d0f0c4bc941a4e51370
 product/priv-app/EuiccGoogle/EuiccGoogle.apk;PRESIGNED|2d238bfe14473b8f578bf0d4ea61246f61d0f618
 
 # Felica - from veux_jp
-vendor/etc/felica/common.cfg:product/etc/felica/common.cfg|ca6ccc74d3e115f4f522d670f64ce7d389b18741
-vendor/etc/felica/mfm.cfg:product/etc/felica/mfm.cfg|4c373c800a0a09f678b0f09fb9a3226121f02921
-vendor/etc/felica/mfs.cfg:product/etc/felica/mfs.cfg|0adfe851cbe62db27c91bcf314bb708b64059af9
+vendor/etc/felica/common.cfg|ca6ccc74d3e115f4f522d670f64ce7d389b18741
+vendor/etc/felica/mfm.cfg|4c373c800a0a09f678b0f09fb9a3226121f02921
+vendor/etc/felica/mfs.cfg|0adfe851cbe62db27c91bcf314bb708b64059af9
 
 # Fingerprint (FPC)
 vendor/lib64/hw/fingerprint.fpc.so:vendor/lib64/hw/fingerprint.fpc.default.so
