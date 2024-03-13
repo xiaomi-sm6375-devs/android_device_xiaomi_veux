@@ -1061,6 +1061,9 @@ vendor/etc/libnfc-nci.conf:vendor/etc/libnfc-nci-sn100.conf|1718bb396eb876128b14
 vendor/etc/libnfc-qrd-SN100.conf:vendor/etc/libnfc-sn100.conf|31330961a0b825e4f196d5c28f5f048cc91fa86e
 vendor/lib/libsn100u_fw.so:vendor/lib64/libsn100u_fw.so|2bc1887b71b4557b75e26465f6917525bfd43e4a
 
+# NFC - from veux_jp
+vendor/etc/libnfc-nxp-pnscr.conf|2dcf56df839c0d660897005da05ac60bf2b183f5
+
 # Neural Networks
 vendor/bin/hw/android.hardware.neuralnetworks@1.3-service-qti
 vendor/etc/init/android.hardware.neuralnetworks@1.3-service-qti.rc

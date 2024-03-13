@@ -81,11 +81,6 @@ ODM_MANIFEST_SKUS += \
 ODM_MANIFEST_SN100_FILES := \
     $(DEVICE_PATH)/manifest_ese.xml
 
-ifeq ($(WITH_FELICA),true)
-ODM_MANIFEST_SN100_FILES += \
-    $(DEVICE_PATH)/manifest_f.xml
-endif
-
 # Kernel
 BOARD_KERNEL_BASE := 0x00000000
 BOARD_KERNEL_IMAGE_NAME := Image
