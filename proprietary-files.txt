@@ -478,7 +478,7 @@ vendor/bin/batterysecret
 vendor/etc/init/init.batterysecret.rc
 
 # CNE
-vendor/app/CneApp/CneApp.apk
+vendor/app/CneApp/CneApp.apk;REQUIRED=CneApp.libvndfwk_detect_jni.qti_symlink
 vendor/bin/cnd
 vendor/bin/mutualex
 vendor/etc/cne/wqeclient/ATT/ATT_profile1.xml
