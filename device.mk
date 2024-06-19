@@ -267,6 +267,10 @@ PRODUCT_PACKAGES += \
     init.target.rc \
     ueventd.qcom.rc
 
+# RIL
+PRODUCT_PACKAGES += \
+    android.hardware.radio-service.compat
+
 # Soong
 PRODUCT_SOONG_NAMESPACES += \
     $(LOCAL_PATH) \
