@@ -346,5 +346,9 @@ PRODUCT_PACKAGES += \
 PRODUCT_COPY_FILES += \
     $(call find-copy-subdir-files,*,$(LOCAL_PATH)/wifi,$(TARGET_COPY_OUT_VENDOR)/etc/wifi)
 
+# WiFi firmware symlinks
+PRODUCT_PACKAGES += \
+    firmware_WCNSS_qcom_cfg.ini_symlink
+
 # Inherit from proprietary targets
 $(call inherit-product, vendor/xiaomi/veux/veux-vendor.mk)
