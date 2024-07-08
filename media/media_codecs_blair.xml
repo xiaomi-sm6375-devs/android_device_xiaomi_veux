@@ -197,15 +197,6 @@
             <Limit name="concurrent-instances" max="3" />
             <Limit name="performance-point-1920x1080" value="30" />
         </MediaCodec>
-        <MediaCodec name="c2.android.av1.decoder" type="video/av01" update="true" variant="slow-cpu">
-            <Limit name="size" min="96x96" max="1920x1080" />
-            <Limit name="alignment" value="2x2" />
-            <Limit name="block-size" value="16x16" />
-            <Limit name="blocks-per-second" min="24" max="2073600" />
-            <Limit name="bitrate" range="1-120000000" />
-            <Limit name="frame-rate" range="1-60" />
-            <Feature name="adaptive-playback" />
-        </MediaCodec>
     </Decoders>
     <Encoders>
         <!-- C2 encoders -->
@@ -264,29 +255,5 @@
             <Limit name="performance-point-8192x4320" value="3" />
             <Limit name="performance-point-1920x1080" value="6" />
         </MediaCodec>
-        <MediaCodec name="c2.android.hevc.encoder" type="video/hevc" update="true" variant="slow-cpu">
-            <!-- profiles and levels:  ProfileMain : MainTierLevel51 -->
-            <Limit name="size" min="2x2" max="512x512" />
-            <Limit name="alignment" value="2x2" />
-            <Limit name="block-size" value="8x8" />
-            <Limit name="block-count" range="1-4096" /> <!-- max 512x512 -->
-            <Limit name="blocks-per-second" range="1-122880" />
-            <Limit name="frame-rate" range="1-120" />
-            <Limit name="bitrate" range="1-10000000" />
-            <Limit name="complexity" range="0-10"  default="0" />
-            <Limit name="quality" range="0-100"  default="80" />
-            <Feature name="bitrate-modes" value="VBR,CBR,CQ" />
-        </MediaCodec>
-        <MediaCodec name="c2.android.vp9.encoder" type="video/x-vnd.on2.vp9" update="true" variant="slow-cpu">
-            <!-- profiles and levels:  ProfileMain : Level_Version0-3 -->
-            <Limit name="size" min="2x2" max="2048x2048" />
-            <Limit name="alignment" value="2x2" />
-            <Limit name="block-size" value="16x16" />
-            <!-- 2016 devices can encode at about 8fps at this block count -->
-            <Limit name="block-count" range="1-3600" /> <!-- max 1280x720 -->
-            <Limit name="bitrate" range="1-40000000" />
-            <Feature name="bitrate-modes" value="VBR,CBR" />
-        </MediaCodec>
     </Encoders>
-    <Include href="media_codecs_google_c2.xml" />
 </MediaCodecs>
