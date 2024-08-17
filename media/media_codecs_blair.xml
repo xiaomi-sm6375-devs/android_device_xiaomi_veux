@@ -82,9 +82,6 @@
         <Domain name="telephony" enabled="true" />
         <Setting name="max-video-encoder-input-buffers" value="11" />
     </Settings>
-    <Settings>
-        <Variant name="slow-cpu" enabled="true" />
-    </Settings>
     <Decoders>
         <!-- C2 decoders -->
         <MediaCodec name="c2.qti.avc.decoder" type="video/avc">
