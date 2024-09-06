@@ -94,6 +94,7 @@
             <Limit name="frame-rate" range="1-120" />
             <Limit name="concurrent-instances" max="16" />
             <Feature name="adaptive-playback" />
+            <Feature name="can-swap-width-height" required="true" />
             <Limit name="concurrent-instances" max="16" />
             <Limit name="performance-point-1920x1080" value="60" />
             <Limit name="performance-point-1280x720" value="120" />
@@ -108,6 +109,7 @@
             <Limit name="frame-rate" range="1-120" />
             <Limit name="concurrent-instances" max="16" />
             <Feature name="adaptive-playback" />
+            <Feature name="can-swap-width-height" required="true" />
             <Feature name="low-latency" />
             <Limit name="concurrent-instances" max="16" />
             <Limit name="performance-point-1920x1080" value="60" />
@@ -122,6 +124,7 @@
             <Limit name="bitrate" range="1-35000000" />
             <Limit name="frame-rate" range="1-60" />
             <Feature name="adaptive-playback" />
+            <Feature name="can-swap-width-height" required="true" />
             <Feature name="low-latency" />
             <Feature name="secure-playback" required="true" />
             <Limit name="concurrent-instances" max="3" />
@@ -137,6 +140,7 @@
             <Limit name="bitrate" range="1-60000000" />
             <Limit name="frame-rate" range="1-120" />
             <Feature name="adaptive-playback" />
+            <Feature name="can-swap-width-height" required="true" />
             <Limit name="concurrent-instances" max="16" />
             <Limit name="performance-point-1920x1080" value="60" />
             <Limit name="performance-point-1280x720" value="120" />
@@ -150,6 +154,7 @@
             <Limit name="bitrate" range="1-60000000" />
             <Limit name="frame-rate" range="1-120" />
             <Feature name="adaptive-playback" />
+            <Feature name="can-swap-width-height" required="true" />
             <Feature name="low-latency" />
             <Limit name="concurrent-instances" max="16" />
             <Limit name="performance-point-1920x1080" value="60" />
@@ -164,6 +169,7 @@
             <Limit name="bitrate" range="1-35000000" />
             <Limit name="frame-rate" range="1-60" />
             <Feature name="adaptive-playback" />
+            <Feature name="can-swap-width-height" required="true" />
             <Feature name="low-latency" />
             <Feature name="secure-playback" required="true" />
             <Limit name="concurrent-instances" max="3" />
@@ -178,6 +184,7 @@
             <Limit name="bitrate" range="1-60000000" />
             <Limit name="frame-rate" range="1-60" />
             <Feature name="adaptive-playback" />
+            <Feature name="can-swap-width-height" required="true" />
             <Limit name="concurrent-instances" max="3" />
             <Limit name="performance-point-1920x1080" value="60" />
         </MediaCodec>
@@ -190,6 +197,7 @@
             <Limit name="bitrate" range="1-35000000" />
             <Limit name="frame-rate" range="1-60" />
             <Feature name="adaptive-playback" />
+            <Feature name="can-swap-width-height" required="true" />
             <Feature name="secure-playback" required="true" />
             <Limit name="concurrent-instances" max="3" />
             <Limit name="performance-point-1920x1080" value="30" />
@@ -207,6 +215,7 @@
             <Limit name="frame-rate" range="1-120" />
             <Limit name="concurrent-instances" max="16" />
             <Feature name="intra-refresh" />
+            <Feature name="can-swap-width-height" required="true" />
             <Feature name="bitrate-modes" value="VBR,CBR" />
             <Limit name="performance-point-1920x1080" value="60" />
             <Limit name="performance-point-1280x720" value="120" />
@@ -222,6 +231,7 @@
             <Limit name="concurrent-instances" max="16" />
             <Feature name="bitrate-modes" value="VBR,CBR" />
             <Feature name="intra-refresh" />
+            <Feature name="can-swap-width-height" required="true" />
             <Limit name="performance-point-1920x1080" value="60" />
             <Limit name="performance-point-1280x720" value="120" />
         </MediaCodec>
