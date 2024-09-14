@@ -93,6 +93,15 @@ $(call soong_config_set_bool,camera,override_format_from_reserved,true)
 # DebugFS
 PRODUCT_SET_DEBUGFS_RESTRICTIONS := true
 
+# Display
+PRODUCT_PACKAGES += \
+    vendor.qti.hardware.display.allocator-service \
+    vendor.qti.hardware.display.composer-service
+
+PRODUCT_PACKAGES += \
+    android.hardware.graphics.mapper@3.0-impl-qti-display \
+    android.hardware.graphics.mapper@4.0-impl-qti-display:64
+
 # Soong
 PRODUCT_SOONG_NAMESPACES += \
     $(LOCAL_PATH)
