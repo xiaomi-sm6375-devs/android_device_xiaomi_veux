@@ -156,6 +156,10 @@ PRODUCT_PACKAGES += \
     ipacm \
     IPACM_cfg.xml
 
+# IR
+PRODUCT_PACKAGES += \
+    android.hardware.ir-service.lineage
+
 # Soong
 PRODUCT_SOONG_NAMESPACES += \
     $(LOCAL_PATH) \
