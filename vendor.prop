@@ -182,6 +182,10 @@ vendor.gralloc.disable_ubwc=0
 vendor.gralloc.secure_preview_buffer_format=420_sp
 vendor.gralloc.secure_preview_only=1
 
+# Fingerprint
+persist.vendor.fingerprint.type=side
+persist.vendor.fingerprint.sensor_location=1080|922|0|local:4630947081618265473
+
 # Incremental FS
 ro.incremental.enable=true
 
