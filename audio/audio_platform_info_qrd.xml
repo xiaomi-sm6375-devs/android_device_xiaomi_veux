@@ -101,6 +101,8 @@
         <usecase name="USECASE_INCALL_REC_UPLINK" type="in" id="23" />
         <usecase name="USECASE_INCALL_REC_DOWNLINK" type="in" id="23" />
         <usecase name="USECASE_INCALL_REC_UPLINK_AND_DOWNLINK" type="in" id="23" />
+        <usecase name="USECASE_AUDIO_ULTRASOUND_RX" type="out" id="35" />
+        <usecase name="USECASE_AUDIO_ULTRASOUND_TX" type="in" id="34" />
     </pcm_ids>
     <config_params>
         <!-- In the below value string, the value indicates default mono -->
@@ -313,6 +315,7 @@
         <device name="SND_DEVICE_OUT_SPEAKER_AND_BT_SCO_WB" backend="speaker-and-bt-sco-wb" interface="SEC_MI2S_RX-and-SLIMBUS_7_RX"/>
         <device name="SND_DEVICE_OUT_SPEAKER_AND_BT_SCO_SWB" backend="speaker-and-bt-sco-swb" interface="SEC_MI2S_RX-and-SLIMBUS_7_RX"/>
         <device name="SND_DEVICE_OUT_HEADPHONES_DSD" backend="headphones-dsd" interface="RX_CDC_DMA_RX_5"/>
+        <device name="SND_DEVICE_IN_ULTRASOUND_MIC" interface="TX_CDC_DMA_TX_4"/>
     </backend_names>
     <!-- below values are for ref purpose to OEM, doesn't contain actual hardware info on MTP -->
     <microphone_characteristics>
