@@ -15,7 +15,7 @@ using android::hardware::audio::V6_0::IDevicesFactory;
 using android::hardware::audio::V6_0::IPrimaryDevice;
 using android::hardware::audio::V6_0::Result;
 
-void ultrasound_enable(int enable) {
+static void ultrasound_enable(int enable) {
     ALOGD("ultrasound_enable: %d", enable);
     auto factory = IDevicesFactory::getService();
     factory->openPrimaryDevice([&](Result retval, const sp<IPrimaryDevice>& result) {
@@ -28,15 +28,17 @@ void ultrasound_enable(int enable) {
     });
 }
 
-extern "C" void elliptic_notify_audio_hal(char* param) {
+extern "C" int elliptic_notify_audio_hal(char* param) {
     ALOGD("elliptic_notify_audio_hal: %s", param);
     if (!strcmp(param, "ultrasound_enable=1")) {
         ultrasound_enable(1);
     } else if (!strcmp(param, "ultrasound_enable=0")) {
         ultrasound_enable(0);
     }
+
+    return 0;
 }
 
-extern "C" void elliptic_ultrasound_supported() {
-    return;
+extern "C" bool elliptic_ultrasound_supported() {
+    return true;
 }
