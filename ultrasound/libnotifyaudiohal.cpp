@@ -30,9 +30,9 @@ static void ultrasound_enable(int enable) {
 
 extern "C" int elliptic_notify_audio_hal(char* param) {
     ALOGD("elliptic_notify_audio_hal: %s", param);
-    if (!strcmp(param, "ultrasound_enable=1")) {
+    if (!strcmp(param, "ultrasound-proximity=1")) {
         ultrasound_enable(1);
-    } else if (!strcmp(param, "ultrasound_enable=0")) {
+    } else if (!strcmp(param, "ultrasound-proximity=0")) {
         ultrasound_enable(0);
     }
 
