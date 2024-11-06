@@ -4,6 +4,9 @@
 # SPDX-License-Identifier: Apache-2.0
 #
 
+from extract_utils.fixups_lib import (
+    lib_fixups,
+)
 from extract_utils.main import (
     ExtractUtils,
     ExtractUtilsModule,
@@ -23,6 +26,7 @@ namespace_imports = [
 module = ExtractUtilsModule(
     'veux',
     'xiaomi',
+    lib_fixups=lib_fixups,
     namespace_imports=namespace_imports,
 )
 
