@@ -207,6 +207,7 @@ PRODUCT_PACKAGES += \
     TelephonyOverlayCOMMON
 
 PRODUCT_PACKAGES += \
+    NcmTetheringOverlay \
     FrameworkOverlayVEUX \
     LineageSDKOverlayVEUX \
     SettingsOverlayVEUX \
