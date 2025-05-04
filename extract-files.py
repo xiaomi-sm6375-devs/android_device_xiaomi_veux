@@ -95,6 +95,8 @@ blob_fixups: blob_fixups_user_type = {
         .add_needed('libcrypto_shim.so'),
     'vendor/lib64/android.hardware.secure_element@1.0-impl.so': blob_fixup()
         .remove_needed('android.hidl.base@1.0.so'),
+    'vendor/lib64/libqcrilNr.so': blob_fixup()
+        .replace_needed('ro.ril.oem', ''),
     ('vendor/lib64/libalLDC.so', 'vendor/lib64/libalhLDC.so'): blob_fixup()
         .clear_symbol_version('AHardwareBuffer_allocate')
         .clear_symbol_version('AHardwareBuffer_describe')
