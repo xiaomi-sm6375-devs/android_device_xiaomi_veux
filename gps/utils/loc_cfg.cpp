@@ -576,7 +576,7 @@ NOTES:
 int loc_read_process_conf(const char* conf_file_name, uint32_t * process_count_ptr,
                           loc_process_info_s_type** process_info_table_ptr) {
     loc_process_info_s_type *child_proc = nullptr;
-    volatile int i=0;
+    int i=0;
     unsigned int j=0;
     gid_t gid_list[LOC_PROCESS_MAX_NUM_GROUPS];
     char *split_strings[MAX_NUM_STRINGS];
