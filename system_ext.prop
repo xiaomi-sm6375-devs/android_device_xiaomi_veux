@@ -8,6 +8,9 @@ persist.vendor.cne.feature=1
 persist.vendor.dpm.feature=11
 persist.vendor.dpm.idletimer.mode=default
 
+# eBPF
+ro.bpf.kver_override=5.10.239
+
 # FUSE
 persist.sys.fuse.passthrough.enable=true
 
