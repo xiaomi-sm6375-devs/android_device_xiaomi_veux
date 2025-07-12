@@ -88,7 +88,8 @@ blob_fixups: blob_fixups_user_type = {
         .regex_replace('0x10080', '0')
         .regex_replace('0x1F', '0x0'),
     'vendor/etc/libnfc-pn557.conf': blob_fixup()
-        .call(blob_fixup_merge_files, 'vendor/libnfc-nxp_RF.conf', 'NXP RF', need_tmp_dir=False),
+        .call(blob_fixup_merge_files, 'vendor/libnfc-nxp_RF.conf', 'NXP RF', need_tmp_dir=False)
+        .regex_replace('pn553', 'nq-nci'),
     'vendor/lib64/camera/components/com.qti.node.mialgocontrol.so': blob_fixup()
         .add_needed('libpiex_shim.so'),
     ('vendor/lib64/mediadrm/libwvdrmengine.so', 'vendor/lib64/libwvhidl.so'): blob_fixup()
