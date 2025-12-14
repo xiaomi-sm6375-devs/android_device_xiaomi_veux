@@ -22,4 +22,7 @@
     default that should be overridden by device-specific overlays. -->
     <dimen name="physical_power_button_center_screen_location_y">922px</dimen>
 
+    <!-- Blur radius behind Notification Shade -->
+    <dimen name="max_shade_window_blur_radius">17.0dip</dimen>
+
 </resources>
