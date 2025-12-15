@@ -205,6 +205,7 @@ PRODUCT_COPY_FILES += \
 # Overlays
 PRODUCT_PACKAGES += \
     CarrierConfigOverlayCOMMON \
+    LineageSettingsProviderOverlayCOMMON \
     SettingsOverlayCOMMON \
     TelephonyOverlayCOMMON
 
