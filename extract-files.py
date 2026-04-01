@@ -28,29 +28,13 @@ from extract_utils.utils import (
 
 namespace_imports = [
     'device/xiaomi/veux',
+    'hardware/qcom-caf/common/libqti-perfd-client',
     'hardware/qcom-caf/sm8350',
-    'hardware/qcom-caf/wlan',
     'hardware/xiaomi',
-    'vendor/qcom/opensource/commonsys/display',
-    'vendor/qcom/opensource/commonsys-intf/display',
-    'vendor/qcom/opensource/dataservices',
     'vendor/qcom/opensource/display',
+    'vendor/xiaomi/sm6375-common',
 ]
 
-def lib_fixup_vendor_suffix(lib: str, partition: str, *args, **kwargs):
-    return f'{lib}_{partition}' if partition == 'vendor' else None
-
-lib_fixups: lib_fixups_user_type = {
-    **lib_fixups,
-    (
-        'com.qualcomm.qti.dpm.api@1.0',
-        'libmmosal',
-        'vendor.qti.diaghal@1.0',
-        'vendor.qti.hardware.fm@1.0',
-        'vendor.qti.hardware.wifidisplaysession@1.0',
-        'vendor.qti.imsrtpservice@3.0',
-    ): lib_fixup_vendor_suffix,
-}
 
 def blob_fixup_merge_files(
     ctx: BlobFixupCtx,
@@ -66,24 +50,29 @@ def blob_fixup_merge_files(
             source = utils._ExtractUtils__args.source
             if source == 'adb':
                 try:
-                    data = run_cmd(['adb', 'shell', 'cat', f'/{file_path_to_merge}'])
+                    data = run_cmd(
+                        ['adb', 'shell', 'cat', f'/{file_path_to_merge}']
+                    )
                 except ValueError:
-                    color_print(f'{file_path_to_merge}: failed to read', color=Color.RED)
+                    color_print(
+                        f'{file_path_to_merge}: failed to read', color=Color.RED
+                    )
             else:
                 file_path_to_merge = path.join(source, file_path_to_merge)
-                with open(file_path_to_merge, 'r', newline='', encoding='utf-8') as f2:
+                with open(
+                    file_path_to_merge, 'r', newline='', encoding='utf-8'
+                ) as f2:
                     data = f2.read()
             try:
                 f1.write(data)
             except:
                 color_print(f'{file.dst}: failed to merge', color=Color.RED)
 
+
 blob_fixups: blob_fixups_user_type = {
     ('odm/etc/build_S88006AA1.prop', 'odm/etc/build_S88007AA1.prop', 'odm/etc/build_S88007EA1.prop', 'odm/etc/build_S88008BA1.prop', 'odm/etc/build_S88106BA1.prop', 'odm/etc/build_S88107BA1.prop'): blob_fixup()
         .regex_replace(r'.+marketname.+\n', '')
         .regex_replace('cert', 'model'),
-    'system_ext/lib64/libwfdnative.so': blob_fixup()
-        .add_needed('libinput_shim.so'),
     'vendor/etc/camera/camxoverridesettings.txt': blob_fixup()
         .regex_replace('0x10080', '0')
         .regex_replace('0x1F', '0x0'),
@@ -92,14 +81,8 @@ blob_fixups: blob_fixups_user_type = {
         .regex_replace('pn553', 'nq-nci'),
     'vendor/lib64/camera/components/com.qti.node.mialgocontrol.so': blob_fixup()
         .add_needed('libpiex_shim.so'),
-    ('vendor/lib64/mediadrm/libwvdrmengine.so', 'vendor/lib64/libwvhidl.so'): blob_fixup()
-        .add_needed('libcrypto_shim.so'),
     'vendor/lib64/android.hardware.secure_element@1.0-impl.so': blob_fixup()
         .remove_needed('android.hidl.base@1.0.so'),
-    ('vendor/lib64/libdpps.so', 'vendor/lib64/libsnapdragoncolor-manager.so'): blob_fixup()
-        .replace_needed('libtinyxml2.so', 'libtinyxml2-v34.so'),
-    'vendor/lib64/libqcrilNr.so': blob_fixup()
-        .replace_needed('ro.ril.oem', ''),
     ('vendor/lib64/libalLDC.so', 'vendor/lib64/libalhLDC.so'): blob_fixup()
         .clear_symbol_version('AHardwareBuffer_allocate')
         .clear_symbol_version('AHardwareBuffer_describe')
@@ -119,5 +102,7 @@ module = ExtractUtilsModule(
 )
 
 if __name__ == '__main__':
-    utils = ExtractUtils.device(module)
+    utils = ExtractUtils.device_with_common(
+        module, 'sm6375-common', module.vendor
+    )
     utils.run()

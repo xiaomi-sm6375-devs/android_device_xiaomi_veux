@@ -1,8 +1,0 @@
-type camera_persist_file, vendor_persist_type, file_type;
-vendor_internal_prop(vendor_camera_sensor_prop)
-
-set_prop(hal_camera_default, vendor_camera_sensor_prop)
-r_dir_file(hal_camera_default, camera_persist_file)
-allow hal_camera_default mnt_vendor_file:dir search;
-
-binder_call(hal_camera_default, system_server)

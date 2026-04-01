@@ -1,1 +1,0 @@
-allow hal_bootctl_default vendor_uefi_block_device:blk_file getattr;

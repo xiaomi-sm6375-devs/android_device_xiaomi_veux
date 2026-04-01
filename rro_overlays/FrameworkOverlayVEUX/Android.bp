@@ -5,5 +5,5 @@
 
 runtime_resource_overlay {
     name: "FrameworkOverlayVEUX",
-    vendor: true,
+    device_specific: true,
 }
